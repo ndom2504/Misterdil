@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misterdil.ca - Meilleurs Deals du Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-tags"></i> Misterdil.ca</h1>
+            </div>
+            <nav class="nav">
+                <a href="#deals">Deals</a>
+                <a href="#categories">Catégories</a>
+                <a href="#sell">Vendre</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-icon" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="btn-primary" id="auth-btn">Se connecter</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Découvrez les Meilleurs Deals du Web</h2>
+            <p>Achetez et vendez vos produits en toute sécurité</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher des deals..." id="search-input">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2>Catégories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Électronique</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Téléphones</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Maison</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Mode</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Livres</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Sport</h3>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>International</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals" id="deals">
+        <div class="container">
+            <h2>Deals du Moment</h2>
+            <div class="deals-grid" id="deals-grid">
+                <!-- Deals will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Panier d'Achats</h2>
+                <button class="close-btn" id="close-cart">&times;</button>
+            </div>
+            <div class="modal-body" id="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <strong>Total:</strong> <span id="cart-total">0.00$</span>
+                </div>
+                <button class="btn-primary" id="checkout-btn">Payer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal" id="auth-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Authentification</h2>
+                <button class="close-btn" id="close-auth">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="auth-container">
+                    <div class="auth-tabs">
+                        <button class="auth-tab active" data-tab="login">Connexion</button>
+                        <button class="auth-tab" data-tab="register">Inscription</button>
+                    </div>
+                    <div class="auth-form" id="login-form">
+                        <input type="email" placeholder="Email" id="login-email">
+                        <input type="password" placeholder="Mot de passe" id="login-password">
+                        <button class="btn-primary" id="login-submit">Se connecter</button>
+                        <button class="btn-google">
+                            <i class="fab fa-google"></i> Continuer avec Google
+                        </button>
+                    </div>
+                    <div class="auth-form hidden" id="register-form">
+                        <input type="text" placeholder="Nom" id="register-name">
+                        <input type="email" placeholder="Email" id="register-email">
+                        <input type="password" placeholder="Mot de passe" id="register-password">
+                        <button class="btn-primary" id="register-submit">S'inscrire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Misterdil.ca</h3>
+                    <p>Votre destination pour les meilleurs deals du web</p>
+                </div>
+                <div class="footer-section">
+                    <h4>À propos</h4>
+                    <a href="#about">Notre histoire</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#careers">Carrières</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Aide</h4>
+                    <a href="#faq">FAQ</a>
+                    <a href="#shipping">Livraison</a>
+                    <a href="#returns">Retours</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Misterdil.ca - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
