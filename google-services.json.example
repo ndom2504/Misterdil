@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "VOTRE_PROJECT_NUMBER",
+    "project_id": "VOTRE_PROJECT_ID",
+    "storage_bucket": "VOTRE_PROJECT_ID.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:VOTRE_PROJECT_NUMBER:android:VOTRE_APP_ID",
+        "android_client_info": {
+          "package_name": "com.ndom2504.misterdil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "VOTRE_API_KEY_ANDROID"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
