@@ -13,13 +13,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://misterdil.ca"),
   title: "Misterdil — Vos colis du Canada, partout dans le monde",
   description:
     "Plateforme de réexpédition internationale de colis. Adresse au Canada, livraison mondiale, suivi en temps réel.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Misterdil",
     description: "Réexpédition de colis du Canada vers le monde entier.",
     type: "website",
+    url: "https://misterdil.ca",
+    siteName: "Misterdil",
+    locale: "fr_CA",
   },
 };
 
